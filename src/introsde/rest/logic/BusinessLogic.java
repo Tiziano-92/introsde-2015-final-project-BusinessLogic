@@ -33,7 +33,7 @@ public class BusinessLogic {
     @Path("/getAllPeople")
     public Response getAllPeople() throws ClientProtocolException, IOException {
     	
-    	String ENDPOINT = "https://calm-citadel-1815.herokuapp.com/storeservice/personList";
+    	String ENDPOINT = "morning-lake-2272.herokuapp.com/storeservice/personList";
 
     	String xmlResponse;
     	
@@ -81,7 +81,7 @@ public class BusinessLogic {
     @Path("/getSinglePerson/{idPerson}")
     public Response getSinglePerson(@PathParam("idPerson") int idPerson) throws ClientProtocolException, IOException {
     	
-    	String ENDPOINT = "https://calm-citadel-1815.herokuapp.com/storeservice/readPerson/"+idPerson;
+    	String ENDPOINT = "morning-lake-2272.herokuapp.com/storeservice/readPerson/"+idPerson;
     	
     	DefaultHttpClient client = new DefaultHttpClient();
     	HttpGet request = new HttpGet(ENDPOINT);
@@ -117,7 +117,7 @@ public class BusinessLogic {
     	String resultComp = "";
     	
     	//GETGOAL
-    	String ENDPOINT = "https://calm-citadel-1815.herokuapp.com/storeservice/readPerson/"+idPerson;
+    	String ENDPOINT = "morning-lake-2272.herokuapp.com/storeservice/readPerson/"+idPerson;
     	DefaultHttpClient client = new DefaultHttpClient();
     	HttpGet request = new HttpGet(ENDPOINT);
     	HttpResponse response = client.execute(request);
