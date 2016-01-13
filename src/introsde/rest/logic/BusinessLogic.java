@@ -33,7 +33,7 @@ public class BusinessLogic {
     @Path("/getAllPeople")
     public Response getAllPeople() throws ClientProtocolException, IOException {
     	
-    	String ENDPOINT = "https://calm-citadel-1815.herokuapp.com/storeservice/service/personList";
+    	String ENDPOINT = "https://calm-citadel-1815.herokuapp.com/storeservice/personList";
 
     	String xmlResponse;
     	
